@@ -65,3 +65,35 @@ This module receives CAN messages sent by Module 1 and displays the sensor data 
 ### Schematic Diagram
 
 ![Schematic Diagram](https://i.ibb.co/KwnqRzK/image.png)
+
+## Wiring Connections
+
+### MCP2515 CAN Bus Module
+
+| MCP2515 Pin | Arduino Pin |
+|-------------|-------------|
+| VCC         | 5V          |
+| GND         | GND         |
+| CS          | D10         |
+| SO          | D12         |
+| SI          | D11         |
+| SCK         | D13         |
+| INT         | D2          |
+
+### I2C Device (e.g., 20x4 LCD)
+
+| I2C Pin     | Arduino Pin |
+|-------------|-------------|
+| VCC         | 5V / 3.3 V  |
+| GND         | GND         |
+| SDA         | A4          |
+| SCL         | A5          |
+
+### Ultrasonic Sensor (HC-SR04)
+
+| HC-SR04 Pin | Arduino Pin |
+|-------------|-------------|
+| VCC         | 5V / 3.3 V  |
+| GND         | GND         |
+| ECHO        | D3          |
+| TRIG        | D4          |
